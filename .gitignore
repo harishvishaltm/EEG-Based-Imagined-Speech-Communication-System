@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Generated audio files (keep directory via .gitkeep)
+backend/static/audio/*.mp3
+backend/static/audio/*.wav
+!backend/static/audio/.gitkeep
+
+# Raw large dataset archives
+data/kara_one/raw/
+data/**/*.tar.bz2
+data/**/*.tar.gz
+data/**/*.zip

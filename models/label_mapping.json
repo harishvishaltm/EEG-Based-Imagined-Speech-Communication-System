@@ -1,0 +1,80 @@
+{
+  "kara_one": {
+    "classes": [
+      "/diy/",
+      "/iy/",
+      "/m/",
+      "/n/",
+      "/piy/",
+      "/tiy/",
+      "/uw/",
+      "gnaw",
+      "knew",
+      "pat",
+      "pot"
+    ],
+    "id_to_label": {
+      "0": "/diy/",
+      "1": "/iy/",
+      "2": "/m/",
+      "3": "/n/",
+      "4": "/piy/",
+      "5": "/tiy/",
+      "6": "/uw/",
+      "7": "gnaw",
+      "8": "knew",
+      "9": "pat",
+      "10": "pot"
+    },
+    "label_to_id": {
+      "/diy/": 0,
+      "/iy/": 1,
+      "/m/": 2,
+      "/n/": 3,
+      "/piy/": 4,
+      "/tiy/": 5,
+      "/uw/": 6,
+      "gnaw": 7,
+      "knew": 8,
+      "pat": 9,
+      "pot": 10
+    }
+  },
+  "feis": {
+    "classes": [
+      "f",
+      "fleece",
+      "goose",
+      "k",
+      "m",
+      "n",
+      "ng",
+      "p",
+      "s",
+      "sh",
+      "t",
+      "thought",
+      "trap",
+      "v",
+      "z",
+      "zh"
+    ]
+  },
+  "nguyen": {
+    "classes": [
+      "in",
+      "out",
+      "up"
+    ],
+    "id_to_label": {
+      "0": "in",
+      "1": "out",
+      "2": "up"
+    },
+    "label_to_id": {
+      "in": 0,
+      "out": 1,
+      "up": 2
+    }
+  }
+}

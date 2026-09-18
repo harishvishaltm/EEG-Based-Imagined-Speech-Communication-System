@@ -1,0 +1,64 @@
+{
+  "model_name": "ImaginedSpeechModel",
+  "architecture": "LearnedChannelGate + TemporalCNN + MultiHeadAttention + BiLSTM + FeatureFusion + DatasetSpecificHeads",
+  "target_sfreq": 256,
+  "target_epoch_samples": 1280,
+  "target_epoch_seconds": 5.0,
+  "bandpass_low": 0.5,
+  "bandpass_high": 100.0,
+  "notch_freqs": [50.0, 60.0],
+  "canonical_channels": 122,
+  "named_channel_count": 62,
+  "generic_channel_count": 60,
+  "n_subjects": 21,
+  "n_datasets": 3,
+  "dataset_name_to_id": {
+    "feis": 0,
+    "kara_one": 1,
+    "nguyen": 2
+  },
+  "classes_per_dataset": {
+    "kara_one": 11,
+    "feis": 16,
+    "nguyen": 3
+  },
+  "channel_gate": {
+    "gate_type": "sigmoid",
+    "encoder_channels": 16,
+    "encoder_kernel_size": 7,
+    "use_subject_embedding": true,
+    "use_dataset_embedding": true,
+    "embedding_dim": 8,
+    "mlp_hidden_dim": 32,
+    "gumbel_temperature": 1.0,
+    "gumbel_min_temperature": 0.3,
+    "sparsity_coefficient": 0.001
+  },
+  "cnn": {
+    "in_channels": 122,
+    "temporal_filters": 32,
+    "depthwise_mult": 2,
+    "kernel_size": 25,
+    "pool_size": 4,
+    "dropout": 0.3
+  },
+  "attention": {
+    "num_heads": 4,
+    "embed_dim": 64,
+    "dropout": 0.1
+  },
+  "bilstm": {
+    "hidden_size": 128,
+    "num_layers": 2,
+    "bidirectional": true,
+    "dropout": 0.3
+  },
+  "fusion": {
+    "fusion_dim": 128,
+    "dropout": 0.3
+  },
+  "heads": {
+    "hidden_dim": 64,
+    "dropout": 0.3
+  }
+}

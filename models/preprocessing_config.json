@@ -1,0 +1,13 @@
+{
+  "target_sfreq": 256,
+  "target_epoch_seconds": 5.0,
+  "target_epoch_samples": 1280,
+  "bandpass_low": 0.5,
+  "bandpass_high": 100.0,
+  "notch_freqs": [50.0, 60.0],
+  "car_reference": true,
+  "ica_enabled": true,
+  "ica_n_components": 20,
+  "artifact_rejection_k": 4.0,
+  "zscore_eps": 1e-8
+}
